@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Login</title>
+    <link rel="icon" type="image/x-icon" href="/logo.jpg">
+    <link rel="stylesheet" href="lg.css">
+</head>
+<body>
+    
+    <div class="page">
+        <div class="welcome">
+            <h2>LỜI NGỎ</h2>
+            <p>Một mục tiêu luôn luôn đồng hành với sự phát triển của doanh nghiệp đó là sở hữu được dịch vụ khách hàng không chỉ tốt mà phải biến nó thành huyền thoại.</p>
+            <button class="login_btn">Đăng nhập</button>
+            <button class="register_btn">Đăng ký</button>
+        </div>
+
+        <div class="register">
+            <form onsubmit="signup()">
+                <h2>Đăng ký Tài khoản của bạn</h2>
+                <input type="username" id="username" placeholder="Tên Đăng nhập">
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" id="password" placeholder="Mật khẩu">
+                <input type="submit" value="ĐĂNG KÝ" id="reg-btn">
+            </form>
+        </div>
+
+        <div class="login">
+            <form onsubmit="loginFunc()">
+                <h2>Đăng nhập tài khoản của bạn</h2>
+                <input type="email" id="log-input" placeholder="Email">
+                <input type="password" id="log-input" placeholder="Mật khẩu">
+                <input type="submit" value="ĐĂNG NHẬP" id="log-btn"><br>
+                  
+                <a href="#" id="forg-pass">Quên mật khẩu?</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="hm.js"></script>
+</body>
+</html>

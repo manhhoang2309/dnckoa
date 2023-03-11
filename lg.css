@@ -1,0 +1,243 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2e2e2e;
+    background: linear-gradient(to bottom right, #f68eef, #53acfa, #89379c);
+    display: grid;
+    place-items: center;
+}
+
+.page {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(#c56dff, #539bfa);
+    text-align: center;
+    transition: 1s cubic-bezier(.95,.32,.37,1.31);
+    z-index: 2;
+}
+
+.welcome h2{
+    margin: 50px 0;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.welcome p {
+    padding: 0 25px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.login_btn {
+    margin:30px 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;   
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.register_btn {
+    display: none;
+    position: absolute;
+    top: 81.5%;
+    left: 25%;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.register_btn.active {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.login_btn.active {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.register {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    transition: 1s cubic-bezier(.95, .32,.37,1.31);
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.register h2 {
+    position: relative;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.register input {
+    margin: 5px 0;
+    width: 300px;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid;
+}
+
+.reg-input {
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.reg-input:focus {
+    border-color: #7f7f7f;
+}
+
+.register .reg-btn {
+    height: 40px;
+    font-weight: 600;
+    background: linear-gradient(to bottom right, #c56dff, #539bfa);
+    color: #fff;
+    border-radius: 30px;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+.register .reg-btn:hover {
+    transform: scale(1.1);
+}
+
+ a{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 14px;
+    
+}
+
+.welcome.active {
+    opacity: 1;
+    background: linear-gradient(#ff71d4, #89379c);
+    color: #fff;
+    left: 62.5%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 1s cubic-bezier(.95, .32, .37, 1.31);
+    z-index: 2;
+}
+
+.register.active {
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s cubic-bezier(.95,.32,.37,1.31);
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s cubic-bezier(.95,.32,.37,1.31);
+    
+}
+
+.login h2 {
+    margin: 40px 0;
+    padding: 0;
+}
+
+.login input {
+    margin: 5px 0;
+    width: 300px;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid;
+}
+
+.log-input {
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.log-input:focus {
+    border-color: #7f7f7f;
+}
+
+.login .log-btn {
+    height: 40px;
+    font-weight: 600;
+    background: linear-gradient(to bottom right, #ff71d4, #89379c);
+    color: #fff;
+    border-radius: 30px;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.login .log-btn:hover {
+    transform: scale(1.1);
+}
+
+.login.active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s cubic-bezier(.95, .32, .37, 1.31);
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foody - Food</title>
+  <link rel="icon" type="image/x-icon" href="/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "fd.css">
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+           
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="hm.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="ab.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lg.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link act" aria-current="page" href="fd.html">Food</a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- navbar code -->
+    </div>
+   
+      <div class = "meal-wrapper">
+        <div class = "meal-search">
+          <h2 class = "title">MỖI NGÀY MỘT MÓN ĂN</h2>
+          <blockquote>
+            Một chế độ ăn uống công bằng là có thức ăn ngon bằng cả hai tay.<br>
+          </blockquote>
+  
+          <div class = "meal-search-box">
+            <input type = "text" class = "search-control" placeholder="Nhập món ăn của bạn" id = "search-input">
+            <button type = "submit" class = "search-btn btn" id = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+  
+        <div class = "meal-result">
+          <h2 class = "title">Kết quả tìm được:</h2>
+          <div id= "meal">
+            <!-- meal item -->
+            <!-- <div class = "meal-item">
+              <div class = "meal-img">
+                <img src = "food.jpg" alt = "food">
+              </div>
+              <div class = "meal-name">
+                <h3>Potato Chips</h3>
+                <a href = "#" class = "recipe-btn">Get Recipe</a>
+              </div>
+            </div> -->
+            <!-- end of meal item -->
+          </div>
+        </div>
+  
+  
+        <div class = "meal-details">
+          <!-- recipe close btn -->
+          <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+            <i class = "fas fa-times"></i>
+          </button>
+  
+          <!-- meal content -->
+          <div class = "meal-details-content">
+            <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+            <p class = "recipe-category">Category Name</p>
+            <div class = "recipe-instruct">
+              <h3>Instructions:</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+            </div>
+            <div class = "recipe-meal-img">
+              <img src = "food.jpg" alt = "">
+            </div>
+            <div class = "recipe-link">
+              <a href = "#" target = "_blank">Watch Video</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+</section>
+
+
+ 
+
+
+
+  <script src = "fd.js"></script>
+</body>
+</html>
